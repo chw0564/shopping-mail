@@ -42,11 +42,9 @@ export default {
 .main-content{
 	max-width: 6.5rem;
 	background-color: white;
-	margin: 0 auto;
 	height: 100%;
 	margin: 0 auto;
 	/* 设置该属性，让子元素 定位以该元素作为父类 */
 	transform:translate(0,0);
-	/* overflow: hidden; */
 }
 </style>

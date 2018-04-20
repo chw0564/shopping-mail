@@ -69,7 +69,7 @@
             }
             .item{
                 width: 33%;
-                height: 2.25rem;
+                height: 2.33rem;
                 border-top:0.01rem solid #ddd;
                 border-right:0.01rem solid #ddd;
                 .image{
@@ -96,8 +96,8 @@
                 .image{
                     position: relative;
                     top: -0.8rem;
-                    right: -1.4rem;
-                    height: 1.3rem;
+                    right: -1.6rem;
+                    height: 1.2rem;
                 }
                 .item-viceTitle{
                     text-align: left;

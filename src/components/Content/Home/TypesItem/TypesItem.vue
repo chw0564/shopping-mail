@@ -37,7 +37,7 @@
                 }
                 span{
                     display:block;
-                    padding: 0rem 0.2rem;
+                    padding: 0rem 0.1rem;
                     font-size: 0.2rem;
                     color: #5a6f7a;
                 }
