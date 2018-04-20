@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style>
-*{
+*:not(.swiper-wrapper){
 	margin: 0px;
 	padding: 0px;
 	overflow: hidden;
@@ -47,5 +47,6 @@ export default {
 	margin: 0 auto;
 	/* 设置该属性，让子元素 定位以该元素作为父类 */
 	transform:translate(0,0);
+	/* overflow: hidden; */
 }
 </style>

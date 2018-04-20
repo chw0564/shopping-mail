@@ -45,6 +45,9 @@
 			flex-grow:1;
 			padding-top: 0.06rem;
 			cursor: pointer;
+			i{
+				font-size: 0.386rem;
+			}
 		};
 		.active{
 			color: #f9446b;

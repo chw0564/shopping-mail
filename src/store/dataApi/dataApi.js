@@ -28,8 +28,14 @@ export default {
                .then((response) => {
                     return response.json()
                 });
+    },
+
+    loadDatasByPid(params){
+        let paramStr = parseParams(params);
+        return jsonp(`${mce}/multiget/3?${paramStr}`)
+               .then((response) => {
+                    return response.json()
+                });
     }
-
-
 
 }

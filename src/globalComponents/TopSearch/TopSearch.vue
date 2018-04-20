@@ -62,7 +62,7 @@
                     return this.$store.getters.keyWord;
                 },
                 set(value){
-                    this.$store.dispatch("setKeyWord",value); 
+                    this.$store.dispatch("setKeyWord",value);
                 }
             }
         },
@@ -109,6 +109,9 @@
         flex-flow: row nowrap;
 		justify-content: center;
         line-height: 0.8rem;
+        >.iconfont{
+            font-size: 0.386rem;
+        }
         >i,span{
             flex-grow:1;
             cursor: pointer;
@@ -150,7 +153,7 @@
         background-color: white;
         position: absolute;
         width: 100%;
-        top: 0.82rem;
+        top: 0.81rem;
         bottom: 0rem;
         z-index: 99;
         >.box{
