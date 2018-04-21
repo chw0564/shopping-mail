@@ -5,7 +5,8 @@
             <div class="seach"></div>
         </div>
         <ul class="tips">
-            <li v-for="(wk,i) in product.props" :key="i">{{ wk }}</li>
+            <li v-if="!title" v-for="(wk,i) in product.props" :key="i">{{ wk }}</li>
+            <li v-if="title" class="title">{{ product.title }}</li>
         </ul>
         <div class="price_star">
             <span class="price">￥{{ product.price }}</span>
@@ -20,7 +21,8 @@
 <script>
     export default {
         props:{
-            product:{}
+            product:{},
+            title:false
         }
     }
 </script>
@@ -66,6 +68,11 @@
                 background-color: #d8e4ec;
                 color: #5a6f7a;
                 font-size: 0.16rem;
+            }
+            >li.title{
+                line-height: 0.32rem;
+                text-indent: 0.2rem;
+                background-color:white;
             }
         }
         .price_star{

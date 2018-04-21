@@ -10,7 +10,7 @@
         </div>
         <div class="wrapper" ref="wrapper">
             <div class="content">
-                <ItemDetail v-for="(product,i) in productList" :key="i" :product="product"></ItemDetail>   
+                <ItemDetail v-for="(product,i) in productList" :key="i" :product="product" :title="false"></ItemDetail>   
             </div> 
         </div>
     </div>

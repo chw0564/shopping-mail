@@ -8,6 +8,8 @@
                 <banner-swiper></banner-swiper>
                 <types-item></types-item>
                 <super-benefit></super-benefit>
+                <hot-types></hot-types>
+                <may-likes></may-likes>
             </div>
         </div>
         
@@ -20,11 +22,13 @@
     import BannerSwiper from './BannerSwiper/BannerSwiper'
     import TypesItem from './TypesItem/TypesItem'
     import SuperBenefit from './SuperBenefit/SuperBenefit'
+    import HotTypes from './HotTypes/HotTypes'
+    import MayLikes from './MayLikes/MayLikes'
     
    
     export default {
         components:{
-            BannerSwiper,TypesItem,SuperBenefit
+            BannerSwiper,TypesItem,SuperBenefit,HotTypes,MayLikes
         },
         methods:{
             initBscroll(){
@@ -41,7 +45,8 @@
         mounted(){
             let datasStatus = this.$store.state.Home.warpImgs.length==0||
                               this.$store.state.Home.types.length==0||
-                              this.$store.state.Home.bebefit.length==0;
+                              this.$store.state.Home.bebefit.length==0||
+                              this.$store.state.Home.hotTypes.length==0;
             if(datasStatus){
                 this.$store.dispatch("loadHomeDatas");
             }
